@@ -27,8 +27,6 @@ vim.opt.rtp:prepend(lazypath)
 --  You can also configure plugins after the setup call,
 --    as they will be available in your neovim runtime.
 require('lazy').setup({
-  -- NOTE: First, some plugins that don't require any configuration
-  --
   -- Detect tabstop and shiftwidth automatically
   'tpope/vim-sleuth',
 
@@ -202,9 +200,6 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   group = highlight_group,
   pattern = '*',
 })
-
-
-
 
 -- [[ Configure Treesitter ]]
 -- See `:help nvim-treesitter`
