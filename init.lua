@@ -10,14 +10,14 @@ if not vim.loop.fs_stat(lazypath) then
 end ---@diagnostic disable-next-line: undefined-field
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup("plugins", {
+require('lazy').setup('plugins', {
   change_detection = {
     enabled = true, -- automatically check for config file changes and reload the ui
   },
 })
 
 -- These modules are not loaded by lazy
-require("core/options")
-require("core/keymaps")
+require 'core/options'
+require 'core/keymaps'
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
