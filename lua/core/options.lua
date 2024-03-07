@@ -4,7 +4,8 @@
 
 -- Set highlight on search
 vim.o.hlsearch = true
-
+-- Set to true if you have a Nerd Font installed
+vim.g.have_nerd_font = true
 -- Make line numbers default
 vim.o.relativenumber = true
 vim.o.number = true
@@ -41,7 +42,7 @@ vim.opt.splitbelow = true
 -- Preview substitutions live, as you type!
 vim.opt.inccommand = 'split'
 
- -- Show which line your cursor is on
+-- Show which line your cursor is on
 vim.opt.cursorline = true
 
 -- Minimal number of screen lines to keep above and below the cursor.
