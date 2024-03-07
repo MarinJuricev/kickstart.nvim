@@ -18,7 +18,7 @@ return {
       end,
     },
     { 'nvim-telescope/telescope-ui-select.nvim' },
-    { 'nvim-tree/nvim-web-devicons' }
+    { 'nvim-tree/nvim-web-devicons' },
   },
   opts = {
     defaults = {
@@ -30,10 +30,10 @@ return {
       },
       layout_config = {
         vertical = {
-          width = 0.75
-        }
-      }
-    }
+          width = 0.75,
+        },
+      },
+    },
   },
   config = function()
     -- Enable telescope extensions, if they are installed
@@ -55,8 +55,7 @@ return {
       end
 
       -- Find the Git root directory from the current file's path
-      local git_root = vim.fn.systemlist('git -C ' .. vim.fn.escape(current_dir, ' ') .. ' rev-parse --show-toplevel')
-          [1]
+      local git_root = vim.fn.systemlist('git -C ' .. vim.fn.escape(current_dir, ' ') .. ' rev-parse --show-toplevel')[1]
       if vim.v.shell_error ~= 0 then
         print 'Not a git repository. Searching on current working directory'
         return cwd
@@ -115,5 +114,5 @@ return {
     vim.keymap.set('n', '<leader>sn', function()
       builtin.find_files { cwd = vim.fn.stdpath 'config' }
     end, { desc = '[S]earch [N]eovim files' })
-  end
+  end,
 }
