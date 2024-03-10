@@ -7,7 +7,7 @@ return { -- You can easily change to a different colorscheme.
   name = 'catppuccin',
   lazy = false, -- make sure we load this during startup if it is your main colorscheme
   priority = 1000, -- make sure to load this before all the other start plugins
-  config = function()
+  init = function()
     vim.cmd.colorscheme 'catppuccin'
 
     -- You can configure highlights by doing something like
