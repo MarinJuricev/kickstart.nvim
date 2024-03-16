@@ -1,7 +1,6 @@
 -- [[ Setting options ]]
 -- See `:help vim.o`
 -- NOTE: You can change these options as you wish!
-
 -- Set highlight on search
 vim.o.hlsearch = true
 -- Set to true if you have a Nerd Font installed
@@ -33,6 +32,8 @@ vim.wo.signcolumn = 'yes'
 
 -- Decrease update time
 vim.o.updatetime = 250
+-- Decrease mapped sequence wait time
+-- Displays which-key popup sooner
 vim.o.timeoutlen = 300
 
 -- Configure how new splits should be opened
