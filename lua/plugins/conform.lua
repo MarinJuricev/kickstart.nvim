@@ -1,6 +1,6 @@
 return { -- Autoformat
   'stevearc/conform.nvim',
-  lazy = false,
+  event = { 'BufReadPre', 'BufNewFile' },
   keys = {
     {
       '<leader>fc',
@@ -30,8 +30,14 @@ return { -- Autoformat
       --
       -- You can use a sub-list to tell conform to run *until* a formatter
       -- is found.
-      javascript = { 'prettierd', 'prettier' },
-      typescript = { 'prettierd', 'prettier' },
+      typescript = { { 'prettierd', 'prettier' } },
+      javascript = { { 'prettierd', 'prettier' } },
+      svelte = { { 'prettierd', 'prettier' } },
+      html = { { 'prettierd', 'prettier' } },
+      css = { { 'prettierd', 'prettier' } },
+      json = { { 'prettierd', 'prettier' } },
+      yml = { { 'prettierd', 'prettier' } },
+      markdown = { { 'prettierd', 'prettier' } },
     },
   },
 }
