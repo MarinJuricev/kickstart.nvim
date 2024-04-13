@@ -152,6 +152,7 @@ return {
       tsserver = {},
       svelte = {},
       tailwindcss = {},
+      cssls = {},
       --
 
       lua_ls = {
