@@ -12,4 +12,50 @@ return { -- You can easily change to a different colorscheme.
     -- You can configure highlights by doing something like
     vim.cmd.hi 'Comment gui=none'
   end,
+  config = function()
+    require('catppuccin').setup {
+      transparent_background = true, -- disables setting the background color.
+      -- https://github.com/catppuccin/nvim#integrations
+      integrations = {
+        gitsigns = true,
+        harpoon = true,
+        indent_blankline = {
+          enabled = true,
+          scope_color = 'text', -- catppuccin color (eg. `lavender`) Default: text
+          colored_indent_levels = false,
+        },
+        mason = true,
+        noice = true,
+        cmp = true,
+        dap = true,
+        dap_ui = true,
+        native_lsp = {
+          enabled = true,
+          virtual_text = {
+            errors = { 'italic' },
+            hints = { 'italic' },
+            warnings = { 'italic' },
+            information = { 'italic' },
+          },
+          underlines = {
+            errors = { 'underline' },
+            hints = { 'underline' },
+            warnings = { 'underline' },
+            information = { 'underline' },
+          },
+          inlay_hints = {
+            background = true,
+          },
+        },
+        notify = true,
+        treesitter = true,
+        telescope = {
+          enabled = true,
+          style = 'nvchad',
+        },
+        lsp_trouble = true,
+        which_key = true,
+      },
+    }
+  end,
 }
