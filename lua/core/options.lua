@@ -55,4 +55,5 @@ vim.o.completeopt = 'menuone,noselect'
 vim.g.netrw_bufsettings = 'noma nomod nu rnu nobl nowrap ro'
 -- NOTE: You should make sure your terminal supports this
 vim.o.termguicolors = true
+-- Concealer for Obsidian
 vim.o.conceallevel = 2
