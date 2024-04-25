@@ -12,6 +12,7 @@ return {
   -- },
   --
   keys = {
+    { '<leader>oo', '<cmd>ObsidianOpen<cr>', desc = '[O]bsidian [O]pen', mode = 'n' },
     { '<leader>on', '<cmd>ObsidianNew<cr>', desc = '[O]bsidian [N]ote', mode = 'n' },
     { '<leader>og', '<cmd>ObsidianSearch<cr>', desc = '[O]bsidian [G]rep', mode = 'n' },
     { '<leader>of', '<cmd>ObsidianQuickSwitch<cr>', desc = '[O]bsidian [F]iles', mode = 'n' },
