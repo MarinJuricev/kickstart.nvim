@@ -1,6 +1,7 @@
 return { -- Autoformat
   'stevearc/conform.nvim',
-  event = { 'BufReadPre', 'BufNewFile' },
+  event = { 'BufReadPre' },
+  cmd = { 'ConformInfo ' },
   keys = {
     {
       '<leader>fc',
