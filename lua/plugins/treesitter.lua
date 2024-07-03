@@ -23,6 +23,8 @@ return {
           'diff',
           'lua',
           'luadoc',
+          'c',
+          'query',
           'html',
           'tsx',
           'javascript',
