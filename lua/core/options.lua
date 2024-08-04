@@ -1,8 +1,9 @@
 -- [[ Setting options ]]
 -- See `:help vim.o`
 -- NOTE: You can change these options as you wish!
--- Set highlight on search
-vim.o.hlsearch = true
+-- Clear highlights on search when pressing <Esc> in normal mode
+--  See `:help hlsearch`
+vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 -- Set to true if you have a Nerd Font installed
 vim.g.have_nerd_font = true
 -- Make line numbers default
