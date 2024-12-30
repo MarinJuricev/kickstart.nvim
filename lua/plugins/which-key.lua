@@ -4,6 +4,9 @@ return {
   event = 'VimEnter',
   opts = {
     icons = {
+      -- delay between pressing a key and opening which-key (milliseconds)
+      -- this setting is independent of vim.opt.timeoutlen
+      delay = 0,
       -- set icon mappings to true if you have a Nerd Font
       mappings = vim.g.have_nerd_font,
       -- If you are using a Nerd Font: set icons.keys to an empty table which will use the
