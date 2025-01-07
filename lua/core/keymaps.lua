@@ -29,3 +29,9 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   group = highlight_group,
   pattern = '*',
 })
+
+-- TIP: Move lines of code up or down with C+k / C+j in normal and visual mode
+vim.keymap.set('n', '<C-k>', ':m .-2<CR>==', { desc = 'Move line up', noremap = true, silent = true })
+vim.keymap.set('n', '<C-j>', ':m .+1<CR>==', { desc = 'Move line down', noremap = true, silent = true })
+vim.keymap.set('x', '<C-k>', ":m '<-2<CR>gv=gv", { desc = 'Move selected lines up', noremap = true, silent = true })
+vim.keymap.set('x', '<C-j>', ":m '>+1<CR>gv=gv", { desc = 'Move selected lines down', noremap = true, silent = true })
