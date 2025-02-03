@@ -9,7 +9,7 @@ vim.g.have_nerd_font = true
 -- Make line numbers default
 vim.o.relativenumber = true
 vim.o.number = true
-vim.o.swap = false
+vim.o.swapfile = false
 
 -- Enable mouse mode
 vim.o.mouse = 'a'
