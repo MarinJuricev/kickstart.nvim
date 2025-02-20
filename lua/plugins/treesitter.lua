@@ -21,6 +21,7 @@ return {
       require('nvim-treesitter.configs').setup {
         -- Add languages to be installed here that you want installed for treesitter
         ensure_installed = {
+          'dart',
           'bash',
           'diff',
           'lua',
@@ -41,7 +42,7 @@ return {
         },
 
         -- Autoinstall languages that are not installed. Defaults to false (but you can change for yourself!)
-        auto_install = false,
+        auto_install = true,
         -- Install languages synchronously (only applied to `ensure_installed`)
         sync_install = false,
         -- List of parsers to ignore installing
