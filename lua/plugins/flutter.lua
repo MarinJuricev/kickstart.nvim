@@ -9,8 +9,8 @@ return {
     require('flutter-tools').setup {
       fvm = true,
       debugger = {
-        enabled = true,
-        run_via_dap = true,
+        enabled = false,
+        run_via_dap = false,
       },
       widget_guides = {
         enabled = true,
