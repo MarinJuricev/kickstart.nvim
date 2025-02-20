@@ -42,6 +42,7 @@ return { -- Autoformat
       json = { 'prettier' },
       yml = { 'prettier' },
       markdown = { 'prettier' },
+      dart = { 'dart_format' },
     },
   },
 }

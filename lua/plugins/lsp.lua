@@ -281,6 +281,38 @@ return {
           end,
         },
       }
+      local lsp_config = require 'lspconfig'
+
+      lsp_config['dartls'].setup {
+        capabilities = capabilities,
+        cmd = { 'dart', 'language-server', '--protocol=lsp' },
+        filetypes = { 'dart' },
+        init_options = {
+          suggestFromUnimportedLibraries = true,
+          closingLabels = true,
+          outline = false,
+          flutterOutline = false,
+        },
+        settings = {
+          dart = {
+            analysisExcludedFolders = {
+              vim.fn.expand '$HOME/AppData/Local/Pub/Cache',
+              vim.fn.expand '$HOME/.pub-cache',
+              vim.fn.expand '/opt/homebrew/',
+              vim.fn.expand '$HOME/tools/flutter/',
+              vim.fn.expand '$HOME/.dart_tool',
+              vim.fn.expand '$HOME/.gradle',
+              vim.fn.expand '$HOME/build/',
+              vim.fn.expand '$HOME/.vscode',
+            },
+            updateImportsOnRename = true,
+            completeFunctionCalls = true,
+            showTodos = true,
+            enableSnippets = true,
+            enableLspForDart = true,
+          },
+        },
+      }
     end,
   },
 }
