@@ -1,7 +1,6 @@
 return {
   -- Detect tabstop and shiftwidth automatically
-  'tpope/vim-sleuth',
-
+  'NMAC427/guess-indent.nvim', -- Detect tabstop and shiftwidth automatically
   {
     -- Add indentation guides even on blank lines
     'lukas-reineke/indent-blankline.nvim',
