@@ -14,6 +14,12 @@ vim.o.swapfile = false
 -- Enable mouse mode
 vim.o.mouse = 'a'
 
+-- Enable undo/redo changes even after closing and reopening a file
+vim.opt.undofile = true
+
+-- Enable smooth scrolling
+vim.opt.smoothscroll = true
+
 -- Sync clipboard between OS and Neovim.
 -- Schedule the setting after `UiEnter` because it can increase startup-time.
 -- Remove this option if you want your OS clipboard to remain independent.
