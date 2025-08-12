@@ -38,6 +38,7 @@ return {
           'regex',
           'markdown',
           'markdown_inline',
+          'rust',
         },
 
         -- Autoinstall languages that are not installed. Defaults to false (but you can change for yourself!)

@@ -222,7 +222,22 @@ return {
         --    https://github.com/pmizio/typescript-tools.nvim
         --
         -- But for many setups, the LSP (`ts_ls`) will work just fine
-        rust_analyzer = {},
+        rust_analyzer = {
+          settings = {
+            ['rust-analyzer'] = {
+              cargo = {
+                allFeatures = true,
+                loadOutDirsFromCheck = true,
+              },
+              procMacro = {
+                enable = true,
+              },
+              checkOnSave = {
+                command = 'clippy',
+              },
+            },
+          },
+        },
         ts_ls = {},
         svelte = {},
         tailwindcss = {},
