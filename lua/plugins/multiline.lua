@@ -1,3 +1,5 @@
+---@module 'lazy'
+---@type LazySpec
 return {
   'jake-stewart/multicursor.nvim',
   branch = '1.0',

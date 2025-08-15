@@ -1,3 +1,5 @@
+---@module 'lazy'
+---@type LazySpec
 return {
   -- Look into:
   -- : SuperMaven https://github.com/supermaven-inc/supermaven-nvim
