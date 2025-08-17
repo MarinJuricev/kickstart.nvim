@@ -7,13 +7,13 @@ return { -- Autoformat
   keys = {
     {
       '<leader>fc',
-      function()
-        require('conform').format { async = true, lsp_format = 'fallback' }
-      end,
+      function() require('conform').format { async = true, lsp_format = 'fallback' } end,
       mode = '',
       desc = '[F]ormat [C]ode',
     },
   },
+  ---@module 'conform'
+  ---@type conform.setupOpts
   opts = {
     notify_on_error = false,
     format_on_save = function(bufnr)
