@@ -26,7 +26,7 @@ return {
     workspaces = {
       {
         name = "ObsidianVault",
-        path = "~/Library/Mobile Documents/com~apple~CloudDocs/Documents/ObsidianVault",
+        path = "~/Vaults/Second Brain/",
       },
     },
     -- see below for full list of options 👇
