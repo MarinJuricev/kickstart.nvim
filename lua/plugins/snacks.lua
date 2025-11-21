@@ -3,4 +3,7 @@ return {
   opts = {
     scroll = { enabled = false },
   },
+  keys = {
+    { "<leader>fc", false },
+  },
 }
