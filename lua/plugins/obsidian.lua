@@ -11,18 +11,19 @@ return {
   --   "BufNewFile path/to/my-vault/*.md",
   -- },
   keys = {
-    { "<leader>oo", "<cmd>ObsidianOpen<cr>", desc = "[O]bsidian [O]pen", mode = "n" },
-    { "<leader>on", "<cmd>ObsidianNew<cr>", desc = "[O]bsidian [N]ote", mode = "n" },
-    { "<leader>og", "<cmd>ObsidianSearch<cr>", desc = "[O]bsidian [G]rep", mode = "n" },
-    { "<leader>of", "<cmd>ObsidianQuickSwitch<cr>", desc = "[O]bsidian [F]iles", mode = "n" },
-    { "<leader>ob", "<cmd>ObsidianBacklinks<cr>", desc = "Show location list of backlinks", mode = "n" },
-    { "<leader>od", "<cmd>ObsidianToday<cr>", desc = "[O]bsidian [D]aily Note", mode = "n" },
-    { "<leader>ot", "<cmd>ObsidianTemplate<cr>", desc = "[O]bsidian [T]emplate", mode = "n" },
-    { "<leader>otc", "<cmd>ObsidianToggleCheckbox<cr>", desc = "[O]bsidian [T]oggle [C]heckbox", mode = "n" },
+    { "<leader>oo", "<cmd>Obsidian open<cr>", desc = "[O]bsidian [O]pen", mode = "n" },
+    { "<leader>on", "<cmd>Obsidian new<cr>", desc = "[O]bsidian [N]ote", mode = "n" },
+    { "<leader>og", "<cmd>Obsidian search<cr>", desc = "[O]bsidian [G]rep", mode = "n" },
+    { "<leader>of", "<cmd>Obsidian quick_switch<cr>", desc = "[O]bsidian [F]iles", mode = "n" },
+    { "<leader>ob", "<cmd>Obsidian backlinks<cr>", desc = "Show location list of backlinks", mode = "n" },
+    { "<leader>od", "<cmd>Obsidian today<cr>", desc = "[O]bsidian [D]aily Note", mode = "n" },
+    { "<leader>ot", "<cmd>Obsidian template<cr>", desc = "[O]bsidian [T]emplate", mode = "n" },
+    { "<leader>otc", "<cmd>Obsidian toggle_checkbox<cr>", desc = "[O]bsidian [T]oggle [C]heckbox", mode = "n" },
   },
   ---@module 'obsidian'
   ---@type obsidian.config
   opts = {
+    legacy_commands = false,
     workspaces = {
       {
         name = "ObsidianVault",
